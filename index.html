@@ -1,25 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Home</title>
+<title>Ultra Calculator</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav>
-<h2>StudentHub Pro</h2>
-<div>
-<a href="index.html">Home</a>
-<a href="students.html">Students</a>
-<a href="about.html">About</a>
-<a href="contact.html">Contact</a>
+<div class="bg"></div>
+
+<div class="calc">
+
+<div class="title">ULTRA CALCULATOR</div>
+
+<input type="text" id="display" disabled>
+
+<div class="buttons">
+
+<button onclick="clearDisplay()" class="op">AC</button>
+<button onclick="appendValue('/')" class="op">÷</button>
+<button onclick="appendValue('*')" class="op">×</button>
+<button onclick="backspace()" class="op">⌫</button>
+
+<button onclick="appendValue('7')">7</button>
+<button onclick="appendValue('8')">8</button>
+<button onclick="appendValue('9')">9</button>
+<button onclick="appendValue('-')" class="op">-</button>
+
+<button onclick="appendValue('4')">4</button>
+<button onclick="appendValue('5')">5</button>
+<button onclick="appendValue('6')">6</button>
+<button onclick="appendValue('+')" class="op">+</button>
+
+<button onclick="appendValue('1')">1</button>
+<button onclick="appendValue('2')">2</button>
+<button onclick="appendValue('3')">3</button>
+<button onclick="calculate()" class="equal">=</button>
+
+<button class="zero" onclick="appendValue('0')">0</button>
+<button onclick="appendValue('.')">.</button>
+
 </div>
-</nav>
 
-<section class="hero">
-<h1>Welcome to StudentHub 🚀</h1>
-<p>Modern Student Portfolio Website</p>
-</section>
+</div>
 
+<script src="script.js"></script>
 </body>
 </html>
